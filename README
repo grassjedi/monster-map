@@ -14,3 +14,8 @@ My path scoring is implemented with game.MonsterMapPathComparator and game.Monst
 My custom serialization method is implemented in serialization.OptimizedSerialization
 Random-map generation is implemented in game.MonsterMapGameMap#createRandomMap(int)
 
+The code will build using maven:
+	mvn package
+(There is only one dependency on junit4)
+There are bash-shell and windows-cmd scripts that run the executable classes in the "questions" package. 
+(The bash scripts are tested in cygwin)
