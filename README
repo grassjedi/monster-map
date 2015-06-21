@@ -1,0 +1,16 @@
+The code is divided into four packages:
+	- game
+		. This package contains monster-map-game specific classes and logic
+	- graph
+		. An implementatation of a directed-graph structure "DirectedNetwork".
+		  This is used by the code in the "game" package to represent the game-map.
+	- questions
+		. executable classes that answer the questions posed in the brief
+	- serialization
+		. classes for use in serialization of "DirectedNetwork" instances.
+
+My implementation of the sample-map is in the class questions.Utility#createExampleMap().
+My path scoring is implemented with game.MonsterMapPathComparator and game.MonsterMapGamePathFinder
+My custom serialization method is implemented in serialization.OptimizedSerialization
+Random-map generation is implemented in game.MonsterMapGameMap#createRandomMap(int)
+
